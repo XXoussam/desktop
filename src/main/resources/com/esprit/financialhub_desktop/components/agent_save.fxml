@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.financialhub_desktop.Controller.SaveAgentController">
+   <stylesheets>
+        <URL value="@../../css/agents.css" />
+   </stylesheets>
+    <children>
+      <Pane layoutX="56.0" layoutY="39.0" prefHeight="304.0" prefWidth="489.0">
+         <children>
+             <Label styleClass="agent_details" layoutX="14.0" layoutY="10.0" text="First Name" />
+            <TextField fx:id="first_name" layoutX="118.0" layoutY="6.0" />
+             <Label styleClass="agent_details" layoutX="14.0" layoutY="46.0" text="Last Name" />
+            <TextField fx:id="last_name" layoutX="118.0" layoutY="42.0" />
+             <Label styleClass="agent_details" layoutX="14.0" layoutY="82.0" text="cin" />
+            <TextField fx:id="cin" layoutX="118.0" layoutY="78.0" />
+             <Label styleClass="agent_details" layoutX="14.0" layoutY="118.0" text="phone" />
+            <TextField fx:id="phone" layoutX="118.0" layoutY="114.0" />
+             <Label styleClass="agent_details" layoutX="14.0" layoutY="152.0" text="email" />
+            <TextField fx:id="email" layoutX="118.0" layoutY="148.0" />
+             <Label styleClass="agent_details" layoutX="9.0" layoutY="234.0" text="password" />
+            <TextField fx:id="password" layoutX="118.0" layoutY="230.0" />
+             <Label styleClass="agent_details" layoutX="14.0" layoutY="190.0" text="role" />
+             <ComboBox fx:id="role" layoutX="118.0" layoutY="186.0">
+             <!-- Add your options here -->
+             <items>
+                 <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="RESPONSIBLE_CLIENTELE" />
+                     <String fx:value="RESPONSIBLE_ACCOUNT" />
+                     <String fx:value="RESPONSIBLE_INVESTMENT" />
+                     <String fx:value="RESPONSIBLE_LOAN" />
+                 </FXCollections>
+             </items>
+         </ComboBox>
+            <ImageView fitHeight="187.0" fitWidth="228.0" layoutX="300.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../../images/Employee of the month-amico.png" />
+                </image>
+            </ImageView>
+            <Button layoutX="375.0" layoutY="268.0" mnemonicParsing="false" onAction="#close" styleClass="btn" text="Cancel" />
+            <Button layoutX="434.0" layoutY="268.0" mnemonicParsing="false" onAction="#save" styleClass="btn" text="Save" />
+            <Label fx:id="err_mssg" layoutY="266.0" prefHeight="37.0" prefWidth="229.0"/>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

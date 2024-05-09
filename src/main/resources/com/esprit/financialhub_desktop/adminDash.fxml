@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.financialhub_desktop.Controller.AdminDashboardController">
+    <stylesheets>
+        <URL value="@../css/Stylesheet.css" />
+    </stylesheets>
+
+    <children>
+        <ScrollPane prefHeight="645.0" prefWidth="825.0">
+            <content>
+                <AnchorPane prefHeight="1700.0" prefWidth="820.0">
+                    <children>
+                        <AreaChart fx:id="areaChart" layoutX="-8.0" layoutY="60.0" prefHeight="400.0" prefWidth="790.0">
+                            <xAxis>
+                                <NumberAxis side="BOTTOM" />
+                            </xAxis>
+                            <yAxis>
+                                <NumberAxis side="LEFT" />
+                            </yAxis>
+                        </AreaChart>
+
+                        <PieChart fx:id="pieChart" layoutX="28.0" layoutY="500.0" prefHeight="465.0" prefWidth="514.0" />
+                        <Label fx:id="percentageLabel" layoutX="28.0" layoutY="550.0" styleClass="chart-label" visible="false" />
+                        <Label layoutX="500.0" layoutY="500.0" text="AI interpretation" textFill="#2c2c2c" style="-fx-font-size: 20px"/>
+
+                        <TextArea fx:id="pieChartLabel" layoutX="500.0" layoutY="550.0" prefHeight="325.0" prefWidth="300.0" style="-fx-max-width: 300px;" styleClass="chart-label" wrapText="true" />
+
+                        <BarChart fx:id="barChart" layoutX="350.0" layoutY="1000.0" prefHeight="470.0" prefWidth="450.0">
+                            <xAxis>
+                                <CategoryAxis side="BOTTOM" />
+                            </xAxis>
+                            <yAxis>
+                                <NumberAxis side="LEFT" />
+                            </yAxis>
+                        </BarChart>
+                        <Label layoutX="28.0" layoutY="1000.0" text="AI interpretation" textFill="#2c2c2c" style="-fx-font-size: 20px"/>
+                        <TextArea fx:id="barChartLabel" layoutX="28.0" layoutY="1050.0" prefHeight="325.0" prefWidth="300.0" style="-fx-max-width: 300px;" styleClass="chart-label" wrapText="true" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

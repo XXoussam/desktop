@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0"
+            xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.esprit.financialhub_desktop.Controller.LoginSignupController">
+
+    <children>
+        <TabPane layoutX="40.0" layoutY="20.0" prefHeight="200.0" prefWidth="320.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Login">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0">
+                            <children>
+                                <TextField fx:id="loginUsernameField" layoutX="40.0" layoutY="40.0" prefWidth="240.0" promptText="Username" />
+                                <PasswordField fx:id="loginPasswordField" layoutX="40.0" layoutY="90.0" prefWidth="240.0" promptText="Password" />
+                                <Button layoutX="40.0" layoutY="140.0" prefWidth="240.0" mnemonicParsing="false" onAction="#login" text="Login" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Sign Up">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0">
+                            <children>
+                                <TextField fx:id="signupUsernameField" layoutX="40.0" layoutY="40.0" prefWidth="240.0" promptText="Username" />
+                                <PasswordField fx:id="signupPasswordField" layoutX="40.0" layoutY="90.0" prefWidth="240.0" promptText="Password" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+        <Text fx:id="ResultText" layoutX="40.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+        <Text layoutX="40.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Switch between tabs to login or sign up." />
+
+    </children>
+</AnchorPane>

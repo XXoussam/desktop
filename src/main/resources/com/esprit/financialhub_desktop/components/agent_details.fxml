@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="103.0" prefWidth="652.0" style="-fx-background-color: transparent" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.financialhub_desktop.Controller.AgentController">
+    <stylesheets>
+        <URL value="@../../css/agents.css" />
+    </stylesheets>
+    <center>
+        <StackPane prefHeight="250.0" prefWidth="200.0" style="-fx-background-color: #f0f0f0;">
+            <HBox alignment="CENTER_LEFT" prefHeight="250.0" prefWidth="445.0" spacing="20.0" styleClass="card">
+                <ImageView>
+                    <image>
+                        <Image url="@../../images/profile1.jpg" />
+                    </image>
+                    <fitWidth>77.0</fitWidth>
+                    <fitHeight>80.0</fitHeight>
+               <HBox.margin>
+                  <Insets left="14.0" />
+               </HBox.margin>
+                </ImageView>
+                <VBox prefHeight="101.0" prefWidth="423.0">
+                    <Label fx:id="agent_name" style="-fx-font-size: 16pt; -fx-font-weight: bold;" text="Card Title" />
+                    <Label fx:id="agent_role" prefHeight="25.0" prefWidth="246.0" style="-fx-font-size: 12pt;" text="Card Description" />
+                    <Label fx:id="agent_email" prefHeight="25.0" prefWidth="246.0" style="-fx-font-size: 12pt;" text="agent_email" />
+                </VBox>
+                <VBox alignment="BASELINE_RIGHT" prefHeight="101.0" prefWidth="55.0" spacing="5">
+                    <Button fx:id="agent_edit" mnemonicParsing="false" onAction="#editAgent" styleClass="btn" text="Edit" />
+                    <Button fx:id="agent_delete" mnemonicParsing="false" onAction="#deleteAgent" prefHeight="25.0" prefWidth="52.0" styleClass="btn" text="Delete" />
+                    <Button fx:id="agent_details" mnemonicParsing="false" onAction="#showDetails" styleClass="btn" text="Details" />
+                </VBox>
+            </HBox>
+        </StackPane>
+    </center>
+</BorderPane>

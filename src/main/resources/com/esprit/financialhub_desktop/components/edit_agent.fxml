@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<AnchorPane prefHeight="306.0" prefWidth="393.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.financialhub_desktop.Controller.EditAgentController">
+    <stylesheets>
+        <URL value="@../../css/agents.css" />
+    </stylesheets>
+    <children>
+        <Label layoutX="14.0" layoutY="14.0" style="-fx-font-size: 20px" text="Generate New Details For Agent" textFill="#007bff">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+    <Label layoutX="14.0" layoutY="100.0" text="Email" />
+    <TextField fx:id="emailField" layoutX="20.0" layoutY="120.0" prefHeight="25.0" prefWidth="200.0" />
+        <!-- Empty Field error message -->
+        <Label fx:id="emailError" layoutX="230.0" layoutY="120.0" text="Email is required" textFill="RED" visible="false" />
+
+
+    <Label layoutX="14.0" layoutY="150.0" text="New Password" />
+    <TextField fx:id="passwordField" layoutX="20.0" layoutY="170.0" prefHeight="25.0" prefWidth="200.0" />
+        <!-- Empty Field error message -->
+        <Label fx:id="passwordError" layoutX="230.0" layoutY="170.0" text="Password is required" textFill="RED" visible="false" />
+
+    <Button fx:id="saveButton" layoutX="34.0" layoutY="250.0" mnemonicParsing="false" styleClass="btn" text="Save" onAction="#save"/>
+    <Button fx:id="cancelButton" layoutX="110.0" layoutY="250.0" mnemonicParsing="false" styleClass="btn" text="Cancel" onAction="#cancel"/>
+
+</children>
+</AnchorPane>

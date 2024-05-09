@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import java.net.URL?>
+<?import javafx.scene.text.Text?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.financialhub_desktop.Controller.ShowAgentController">
+    <stylesheets>
+        <URL value="@../../css/agents.css" />
+    </stylesheets>
+
+    <children>
+        <Pane layoutX="45.0" layoutY="30.0" prefHeight="342.0" prefWidth="512.0">
+            <children>
+                <ImageView fitHeight="214.0" fitWidth="215.0" layoutX="29.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/profile1.jpg" />
+                    </image>
+                </ImageView>
+                <VBox layoutX="262.0" layoutY="26.0" prefHeight="225.0" prefWidth="215.0">
+                    <children>
+                        <Text style="-fx-font-size: 15px" layoutX="14.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+                        <Label fx:id="nameLabel" layoutX="14.0" layoutY="14.0" text="Name" />
+                        <Text style="-fx-font-size: 15px" layoutX="14.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Role" />
+                        <Label fx:id="roleLabel" layoutX="14.0" layoutY="14.0" text="Role" />
+                        <Text style="-fx-font-size: 15px" layoutX="14.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+                        <Label fx:id="emailLabel" layoutX="14.0" layoutY="14.0" text="Email" />
+                        <Text style="-fx-font-size: 15px" layoutX="14.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+                        <Label fx:id="passwordLabel" layoutX="14.0" layoutY="14.0" text="Password" />
+                        <Text style="-fx-font-size: 15px" layoutX="14.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone" />
+                        <Label fx:id="phoneLabel" layoutX="14.0" layoutY="14.0" text="Phone" />
+                        <Text style="-fx-font-size: 15px" layoutX="14.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CIN" />
+                        <Label fx:id="cinLabel" layoutX="14.0" layoutY="14.0" text="CIN" />
+                    </children>
+                </VBox>
+                <Button styleClass="btn" layoutX="39.0" layoutY="277.0" mnemonicParsing="false" text="Back" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+.card{
+    -fx-border-color: rgba(0,0,0,0.44);
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-cursor: hand;
+}
+
+.card:hover{
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-background-color: rgba(0, 0, 0, 0.02);
+}
+
+.btn{
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+    -fx-border-radius: 10px;
+    -fx-cursor: hand;
+}
+
+.showLabel{
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+
+.my-alert {
+    -fx-background-color: #f8d7da; /* Background color */
+    -fx-border-color: #dc3545; /* Border color */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 5px; /* Border radius */
+    -fx-padding: 10px; /* Padding */
+    -fx-font-size: 14px; /* Font size */
+}
+
+.agent_details{
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.title {
+    -fx-font-size: 20px;
+}

@@ -1,0 +1,77 @@
+{
+  "AGENTS": {
+    "responsible_accounts": [
+      {
+        "first_name": "Juan",
+        "last_name": "Mcneil",
+        "email": "anita60@foster.com",
+        "password": ")JDy$ryk082*",
+        "phone_number": "2387047891",
+        "cin": 31073241
+      },
+      {
+        "first_name": "Maria",
+        "last_name": "Gonzalez",
+        "email": "maria.gonzalez@example.com",
+        "password": "P@ssw0rd123",
+        "phone_number": "5551234567",
+        "cin": 98765432
+      }
+    ],
+    "responsible_investment": [
+      {
+        "first_name": "John",
+        "last_name": "Doe",
+        "email": "john.doe@example.com",
+        "password": "DoeP@ssword123",
+        "phone_number": "1234567890",
+        "cin": 12345678
+      },
+      {
+        "first_name": "Emily",
+        "last_name": "Smith",
+        "email": "emily.smith@example.com",
+        "password": "SecurePwd123!",
+        "phone_number": "9876543210",
+        "cin": 87654321
+      }
+    ],
+    "responsible_clientele": [
+      {
+        "first_name": "Carlos",
+        "last_name": "Santos",
+        "email": "carlos.santos@example.com",
+        "password": "Carlo$Pwd456",
+        "phone_number": "4567890123",
+        "cin": 23456789
+      },
+      {
+        "first_name": "Jessica",
+        "last_name": "Brown",
+        "email": "jessica.brown@example.com",
+        "password": "BrownPass789",
+        "phone_number": "7890123456",
+        "cin": 34567890
+      }
+    ],
+    "responsible_loan": [
+      {
+        "first_name": "Daniel",
+        "last_name": "Martinez",
+        "email": "daniel.martinez@example.com",
+        "password": "D@n1elPwd!",
+        "phone_number": "6543210987",
+        "cin": 45678901
+      },
+      {
+        "first_name": "Amanda",
+        "last_name": "Johnson",
+        "email": "amanda.johnson@example.com",
+        "password": "Amand@Pwd123",
+        "phone_number": "2109876543",
+        "cin": 56789012
+      }
+    ]
+  }
+
+}

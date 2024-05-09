@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="agentsPane" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.financialhub_desktop.Controller.AgentsController">
+   <stylesheets>
+      <URL value="@../css/agents.css" />
+    </stylesheets>
+   <children>
+      <ScrollPane prefHeight="645.0" prefWidth="825.0">
+         <content>
+            <VBox spacing="10">
+               <Pane>
+                  <TableView fx:id="agentsTableView" layoutX="25.0" layoutY="25.0" prefHeight="159.0" prefWidth="661.0">
+                     <columns>
+                        <TableColumn fx:id="agentTypeColumn" text="Agent Type" />
+                        <TableColumn fx:id="descriptionColumn" text="Description" />
+                        <TableColumn fx:id="amountColumn" text="Amount">
+                           <cellValueFactory>
+                              <PropertyValueFactory property="amount" />
+                           </cellValueFactory>
+                        </TableColumn>
+                     </columns>
+                  </TableView>
+                  <Label layoutX="14.0" text="NB : with every deposit a notifier mail will be sent !" underline="true">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="3.0" left="24.0" top="10.0" />
+                     </VBox.margin>
+                    </Label>
+                  <VBox.margin>
+                     <Insets top="26.0" />
+                  </VBox.margin>
+               </Pane>
+               <CheckBox fx:id="automateDepositCheckBox" mnemonicParsing="false" prefHeight="32.0" prefWidth="216.0" text="Automate Monthly Deposit">
+                  <padding>
+                     <Insets left="26.0" />
+                  </padding>
+               </CheckBox>
+
+
+
+
+               <Button fx:id="btn_add" mnemonicParsing="false" onAction="#add_new" prefHeight="36.0" prefWidth="104.0" styleClass="btn" text="Add New Agent">
+                    <VBox.margin>
+                         <Insets left="20.0" right="20.0" top="20.0" />
+                    </VBox.margin>
+               </Button>
+               <VBox fx:id="agentsVBox" prefHeight="1700.0" prefWidth="660.0">
+                  <padding>
+                     <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+                  </padding>
+               </VBox>
+            </VBox>
+
+
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

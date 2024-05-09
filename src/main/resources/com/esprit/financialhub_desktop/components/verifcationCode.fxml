@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.financialhub_desktop.Controller.VerificationCodeController">
+   <stylesheets>
+      <URL value="@../../css/agents.css" />
+   </stylesheets>
+   <children>
+      <Pane layoutX="23.0" layoutY="21.0" prefHeight="358.0" prefWidth="550.0">
+         <children>
+            <Label layoutX="89.0" layoutY="91.0" text="enter the code sent by email ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="verification_code" layoutX="89.0" layoutY="127.0" prefHeight="25.0" prefWidth="166.0" />
+            <Button layoutX="89.0" layoutY="167.0" mnemonicParsing="false" onAction="#verify" styleClass="btn" text="Verify" />
+            <Label fx:id="err_mssg" layoutX="145.0" layoutY="167.0" prefHeight="25.0" prefWidth="205.0" textFill="red" visible="false"/>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

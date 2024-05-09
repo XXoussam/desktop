@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import java.net.URL?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.financialhub_desktop.Controller.PerspectiveController">
+<stylesheets>
+    <URL value="@../css/agents.css" />
+</stylesheets>
+    <children>
+        <ScrollPane prefHeight="642.0" prefWidth="825.0">
+        <content>
+        <VBox layoutX="50.0" layoutY="50.0">
+              <HBox spacing="15">
+                  <ImageView fitHeight="151.0" fitWidth="136.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-radius: 8px">
+                        <image>
+                            <Image url="@../images/OIP.jpg" />
+                        </image>
+                  </ImageView>
+                  <Text text="This feature powered by CHATGPT, allows you to generate a detailed financial report based on diagrams interpretation. it gives you a clear view of your financial situation and helps you to make better decisions." wrappingWidth="630.0">
+                      <font>
+                          <Font size="25.0" />
+                      </font>
+
+                      This feature powered by CHATGPT, allows you to generate a detailed financial report based on diagrams interpretation.
+                      it gives you a clear view of your financial situation and helps you to make better decisions.
+                  </Text>
+                  <VBox.margin>
+                      <Insets left="20.0" top="28.0" />
+                  </VBox.margin>
+              </HBox>
+               <HBox spacing="10">
+                   <Button mnemonicParsing="false" styleClass="btn" onAction="#generate" prefHeight="32.0" prefWidth="89.0" text="Generate">
+
+                       <font>
+                           <Font size="14.0" />
+                       </font>
+                   </Button>
+                   <ProgressIndicator fx:id="progressIndicator" progress="0.0" visible="false">
+                     <HBox.margin>
+                        <Insets left="9.0" top="-8.0" />
+                     </HBox.margin>
+                  </ProgressIndicator>
+                   <VBox.margin>
+                       <Insets bottom="5.0" left="20.0" top="20.0" />
+                   </VBox.margin>
+               </HBox>
+
+
+            <Text fx:id="mytext" wrappingWidth="650.0">
+                <font>
+                    <Font size="18.0" />
+                </font>
+                  <VBox.margin>
+                     <Insets left="20.0" top="28.0" />
+                  </VBox.margin>
+                Welcome to the Financial Hub Desktop Application. This application allows you to manage your financial transactions and export them to a CSV file.
+            </Text>
+
+            <Button fx:id="export_btn" onAction="#exportButtonAction" text="Send it to me" styleClass="btn">
+            <VBox.margin>
+               <Insets bottom="12.0" left="20.0" top="20.0" />
+            </VBox.margin></Button>
+        </VBox>
+        </content>
+        </ScrollPane>
+    </children>
+
+</AnchorPane>

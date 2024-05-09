@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="parent" prefHeight="520.0" prefWidth="800.0" stylesheets="@../css/Stylesheet.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.financialhub_desktop.Controller.LoginSignupController">
+   <children>
+      <Pane fx:id="content" layoutY="14.0" prefHeight="505.0" prefWidth="800.0">
+         <children>
+            <Label layoutX="157.0" layoutY="33.0" text="Login" textFill="#070707">
+               <font>
+                  <Font name="Berlin Sans FB" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="91.0" layoutY="64.0" text="make sure your account is secure" textFill="#6f6a6a">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="385.0" fitWidth="358.0" layoutX="22.0" layoutY="50.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../images/front.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="578.0" layoutY="120.0" text="Welcome" textFill="#172452">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_RIGHT" layoutX="486.0" layoutY="197.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="260.0" style="-fx-background-color: transparent; -fx-border-color: #E1E1E1; -fx-border-radius: 50px;">
+               <children>
+                  <TextField fx:id="loginUsernameField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="221.0" promptText="Enter your Username" style="-fx-background-color: transparent;" />
+                  <FontAwesomeIcon fill="#e1e1e1" iconName="USER" size="1.3em" />
+               </children>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" layoutX="486.0" layoutY="245.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="260.0" style="-fx-background-color: transparent; -fx-border-color: #E1E1E1; -fx-border-radius: 50px;">
+               <children>
+                  <PasswordField fx:id="loginPasswordField" prefHeight="35.0" prefWidth="218.0" promptText="Enter Your Password" style="-fx-background-color: transparent;" />
+                  <FontAwesomeIcon fill="#e1e1e1" iconName="LOCK" size="1.3em" />
+               </children>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </HBox>
+            <Label layoutX="486.0" layoutY="296.0" onMouseClicked="#sendVerifyCode" text="forget password?" textFill="#8d8989">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font>
+            </Label>
+            <Label visible="false" fx:id="err_mssg_username" layoutX="486.0" layoutY="318.0" text="enter your username first !" textFill="#e51717" />
+            <Label layoutX="693.0" layoutY="295.0" text="Login" textFill="#8d8989">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font>
+            </Label>
+            <Button layoutX="673.0" layoutY="293.0" mnemonicParsing="false" onAction="#handle_login" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: #FFFFFF; -fx-opacity: 10%;" text="" />
+            <Text fx:id="ResultText" layoutX="620.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
